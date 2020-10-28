@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Equinox.Questions.Entities.Enities
+namespace Equinox.Questions.Entities.Entity
 {
-    public class Answer
+    public class Explanation
     {
         public Guid Id { get; set; }
-        public int OrderNo {get;set;}
         public int QuestionId { get; set; }
         public string Text { get; set; }
-        public bool IsCorrect { get; set; }
-        public Question Question { get; set; }
+        public DateTime LastModified { get; set; }
     }
 }

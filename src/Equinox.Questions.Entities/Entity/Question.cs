@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Equinox.Questions.Entities.Entity;
 using Equinox.Questions.Entities.Enums;
 
-namespace Equinox.Questions.Entities.Enities
+namespace Equinox.Questions.Entities.Enitity
 {
     public class Question
     {
@@ -15,6 +16,7 @@ namespace Equinox.Questions.Entities.Enities
         public bool MultiAnswer { get; set; }
         public bool IsDeleted { get; set; }
         public ICollection<Answer> Answers { get; set; }
+        public Explanation Explanation { get; set; }
 
     }
 }
