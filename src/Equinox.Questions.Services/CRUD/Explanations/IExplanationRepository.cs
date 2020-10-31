@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Equinox.Questions.Entities.Enitity;
-using Equinox.Questions.Entities.Entity;
+﻿using Equinox.Questions.Entities.Model;
 
 namespace Equinox.Questions.Services.CRUD.Explanations
 {

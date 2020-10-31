@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Equinox.Questions.Entities.Entity;
+using Equinox.Questions.Entities.Model;
 using Equinox.Questions.Entities.Enums;
 
-namespace Equinox.Questions.Entities.Enitity
-{
+namespace Equinox.Questions.Entities.Model
+{ 
     public class Question
     {
         public Guid Id { get; set; }
