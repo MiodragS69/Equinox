@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Equinox.Questions.Entities", "src\Equinox.Questions.Entities\Equinox.Questions.Entities.csproj", "{2F0A616F-F424-46F9-8292-BD05FCA256C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equinox.Questions.Services", "src\Equinox.Questions.Services\Equinox.Questions.Services.csproj", "{1F69D17E-7E65-4A21-8C3B-6713D7D906EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Equinox.Questions.Services", "src\Equinox.Questions.Services\Equinox.Questions.Services.csproj", "{1F69D17E-7E65-4A21-8C3B-6713D7D906EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equinox.Common.Connection", "src\Equinox.Common.Connection\Equinox.Common.Connection.csproj", "{431D75C2-DFF9-4018-9FED-6364CEB5C12C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Equinox.Common.Connection", "src\Equinox.Common.Connection\Equinox.Common.Connection.csproj", "{431D75C2-DFF9-4018-9FED-6364CEB5C12C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
