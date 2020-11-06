@@ -9,7 +9,10 @@ namespace Equinox.Questions.Entities.Model
 {
     public class QuestionsContext : DbContext
     {
-
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Answer> Answers { get; set; }
+        public DbSet<Explanation> Explanations { get; set; }
+        public DbSet<AttachedImage> Images { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new QuestionEntityConfiguration());
