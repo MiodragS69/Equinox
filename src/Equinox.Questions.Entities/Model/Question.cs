@@ -8,8 +8,7 @@ namespace Equinox.Questions.Entities.Model
 { 
     public class Question
     {
-        public Guid Id { get; set; }
-        public int OrderNo { get; set; }
+        public int Id { get; set; }        
         public string Text { get; set; }
         public Scope QuestionScope { get; set; }
         public Grade QuestionGrade { get; set; }
@@ -17,6 +16,7 @@ namespace Equinox.Questions.Entities.Model
         public bool IsDeleted { get; set; }
         public ICollection<Answer> Answers { get; set; }
         public Explanation Explanation { get; set; }
+        public AttachedImage AttachedImage { get; set; }
 
     }
 }

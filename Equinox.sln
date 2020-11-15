@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Equinox.Common.Connection",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{EF2414DA-39AB-41A5-B2D0-7D1609E8B6B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equinox.Test.Oracle.Connect", "Equinox.Test.Oracle.Connect\Equinox.Test.Oracle.Connect.csproj", "{8DD0461B-6324-489F-BE4A-C8048974ACD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Equinox.Test.Oracle.Connect", "Equinox.Test.Oracle.Connect\Equinox.Test.Oracle.Connect.csproj", "{8DD0461B-6324-489F-BE4A-C8048974ACD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

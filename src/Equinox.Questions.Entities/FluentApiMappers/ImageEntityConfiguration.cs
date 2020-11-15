@@ -11,7 +11,8 @@ namespace Equinox.Questions.Entities.FluentApiMappers
     {
         public void Configure(EntityTypeBuilder<AttachedImage> builder)
         {
-            throw new NotImplementedException();
+            builder.ToTable("Images");
+            builder.HasKey(i => i.Id);            
         }
     }
 }

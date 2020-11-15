@@ -6,8 +6,9 @@ namespace Equinox.Questions.Entities.Model
 {
     public class AttachedImage
     {
-        public Guid Id { get; set; }
-        public int QuestionId {get;set;}
+        public int Id { get; set; }  
+        public int QuestionId { get; set; }
         public byte[] Image { get; set; }
+        public Question Question { get; set; }
     }
 }

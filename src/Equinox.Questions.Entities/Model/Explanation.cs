@@ -6,9 +6,10 @@ namespace Equinox.Questions.Entities.Model
 {
     public class Explanation
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }  
         public int QuestionId { get; set; }
         public string Text { get; set; }
         public DateTime LastModified { get; set; }
+        public Question Question { get; set; }
     }
 }

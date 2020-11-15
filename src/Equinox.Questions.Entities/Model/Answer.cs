@@ -6,7 +6,7 @@ namespace Equinox.Questions.Entities.Model
 { 
     public class Answer
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public int OrderNo {get;set;}
         public int QuestionId { get; set; }
         public string Text { get; set; }

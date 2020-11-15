@@ -44,7 +44,7 @@ namespace Equinox.Questions.Services.CRUD.Questions
             SqlCommand cmd = _conn.CreateCommand();
             cmd.CommandText = Sql;
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.Parameters.AddWithValue("@OrderNo",question.OrderNo);
+            cmd.Parameters.AddWithValue("@OrderNo",question.Id);
             // TODO: Add more parameters ..
 
             try
@@ -86,7 +86,7 @@ namespace Equinox.Questions.Services.CRUD.Questions
             SqlCommand cmd = _conn.CreateCommand();
             cmd.CommandText = Sql;
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.Parameters.AddWithValue("@OrderNo", question.OrderNo);
+            cmd.Parameters.AddWithValue("@Id", question.Id);
             // TODO: Add more parameters ..
 
             try
@@ -129,7 +129,7 @@ namespace Equinox.Questions.Services.CRUD.Questions
             SqlCommand cmd = _conn.CreateCommand();
             cmd.CommandText = Sql;
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.Parameters.AddWithValue("@OrderNo", question.OrderNo);
+            cmd.Parameters.AddWithValue("@Id", question.Id);
             try 
             {
                 cmd.ExecuteNonQuery();
@@ -224,7 +224,7 @@ namespace Equinox.Questions.Services.CRUD.Questions
                 questions.Add(
                     new Question
                     {
-                        OrderNo = int.Parse(dr["OrderNo"].ToString()),
+                        Id = int.Parse(dr["Id"].ToString()),
                         Text = dr["Text"].ToString(),
                         QuestionScope = (Scope)int.Parse(dr["QuestionScope"].ToString()),
                         QuestionGrade = (Grade)int.Parse(dr["QuestionGrade"].ToString()),
@@ -291,7 +291,7 @@ namespace Equinox.Questions.Services.CRUD.Questions
                     answers.Add(
                         new Answer
                         {
-                            Id = new Guid(dr["Id"].ToString()),
+                            Id = int.Parse(dr["Id"].ToString()),
                             QuestionId = int.Parse(dr["QuestionId"].ToString()),
                             OrderNo = int.Parse(dr["OrderNo"].ToString()),
                             Text = dr["Text"].ToString(),
@@ -347,7 +347,7 @@ namespace Equinox.Questions.Services.CRUD.Questions
                     explanations.Add(
                         new Explanation
                         {
-                            Id = new Guid(dr["Id"].ToString()),
+                            Id = int.Parse(dr["Id"].ToString()),
                             QuestionId = questionId,
                             Text = dr["Text"].ToString()
                         }) ;

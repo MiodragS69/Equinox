@@ -11,7 +11,10 @@ namespace Equinox.Questions.Entities.FluentApiMappers
     {
         public void Configure(EntityTypeBuilder<Explanation> builder)
         {
-            throw new NotImplementedException();
+            builder.ToTable("Explanations");
+            builder.HasKey(e => e.Id);
+            builder.Property(e => e.Text)
+                .HasMaxLength(1000);
         }
     }
 }

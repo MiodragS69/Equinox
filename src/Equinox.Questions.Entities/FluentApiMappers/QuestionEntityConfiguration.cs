@@ -12,7 +12,9 @@ namespace Equinox.Questions.Entities.FluentApiMappers
     {
         public void Configure(EntityTypeBuilder<Question> builder)
         {
-            builder.HasKey(q => q.Id);
+            builder.ToTable("Questions");
+            builder.HasKey(q => q.Id);            
+            builder.HasQueryFilter(q => q.IsDeleted == false) ;
             builder.Property(q => q.Text)
                 .IsRequired()
                 .HasMaxLength(500);
