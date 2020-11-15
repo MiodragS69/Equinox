@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 using Equinox.Questions.Entities.Model;
 using Equinox.Questions.Entities.Enums;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Equinox.Questions.Entities.Model
 { 
     public class Question
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }        
         public string Text { get; set; }
         public Scope QuestionScope { get; set; }

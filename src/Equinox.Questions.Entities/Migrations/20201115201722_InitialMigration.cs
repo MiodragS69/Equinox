@@ -11,8 +11,7 @@ namespace Equinox.Questions.Entities.Migrations
                 name: "Questions",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Text = table.Column<string>(maxLength: 500, nullable: false),
                     QuestionScope = table.Column<int>(nullable: false, defaultValue: 0),
                     QuestionGrade = table.Column<int>(nullable: false, defaultValue: 0),
@@ -28,8 +27,7 @@ namespace Equinox.Questions.Entities.Migrations
                 name: "Answers",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     OrderNo = table.Column<int>(nullable: false),
                     QuestionId = table.Column<int>(nullable: false),
                     Text = table.Column<string>(maxLength: 100, nullable: false),
@@ -50,8 +48,7 @@ namespace Equinox.Questions.Entities.Migrations
                 name: "Explanations",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     QuestionId = table.Column<int>(nullable: false),
                     Text = table.Column<string>(maxLength: 1000, nullable: true),
                     LastModified = table.Column<DateTime>(nullable: false)
@@ -71,8 +68,7 @@ namespace Equinox.Questions.Entities.Migrations
                 name: "Images",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     QuestionId = table.Column<int>(nullable: false),
                     Image = table.Column<byte[]>(nullable: true)
                 },
